@@ -16,12 +16,12 @@ namespace Projeto_AED_3
         {
             InitializeComponent();
             exercicio2ToolStripMenuItem.Click += Exercicio2ToolStripMenuItem_Click;
-            exercicio3ToolStripMenuItem.Click += Exercicio3ToolStripMenuItem_Click;
+            exercicio7ToolStripMenuItem.Click += Exercicio7ToolStripMenuItem_Click;
         }
 
-        private void Exercicio3ToolStripMenuItem_Click(object sender, EventArgs e)
+        private void Exercicio7ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            BubbleSort form = new BubbleSort();
+            Exercicio7 form = new Exercicio7();
             form.MdiParent = this;
             form.WindowState = FormWindowState.Maximized;
             form.Show();
@@ -29,7 +29,7 @@ namespace Projeto_AED_3
 
         private void Exercicio2ToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            Form2 form = new Form2();
+            Exercicio2 form = new Exercicio2();
             form.MdiParent = this;
             form.WindowState = FormWindowState.Maximized;
             form.Show();

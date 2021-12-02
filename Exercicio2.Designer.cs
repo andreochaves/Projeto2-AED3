@@ -1,7 +1,7 @@
 ﻿
 namespace Projeto_AED_3
 {
-    partial class Form2
+    partial class Exercicio2
     {
         /// <summary>
         /// Required designer variable.

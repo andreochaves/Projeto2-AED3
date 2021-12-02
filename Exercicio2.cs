@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Projeto_AED_3
 {
-    public partial class Form2 : Form
+    public partial class Exercicio2 : Form
     {
-        public Form2()
+        public Exercicio2()
         {
             InitializeComponent();
         }

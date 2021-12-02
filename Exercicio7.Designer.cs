@@ -1,7 +1,7 @@
 ﻿
 namespace Projeto_AED_3
 {
-    partial class BubbleSort
+    partial class Exercicio7
     {
         /// <summary>
         /// Required designer variable.
@@ -74,7 +74,7 @@ namespace Projeto_AED_3
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(297, 38);
             this.label3.TabIndex = 3;
-            this.label3.Text = "10 40 5 15 30 70 20";
+            this.label3.Text = "20 70 30 15 5 40 10";
             // 
             // BubbleSort
             // 
