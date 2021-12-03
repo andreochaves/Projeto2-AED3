@@ -64,7 +64,7 @@ namespace Projeto_AED_3
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(297, 38);
             this.label2.TabIndex = 3;
-            this.label2.Text = "20 70 30 15 5 40 10";
+            this.label2.Text = "10 40 5 15 30 70 20";
             // 
             // label3
             // 
@@ -74,9 +74,9 @@ namespace Projeto_AED_3
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(297, 38);
             this.label3.TabIndex = 3;
-            this.label3.Text = "20 70 30 15 5 40 10";
+            this.label3.Text = "10 40 5 15 30 70 20";
             // 
-            // BubbleSort
+            // Exercicio7
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -85,7 +85,7 @@ namespace Projeto_AED_3
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button1);
-            this.Name = "BubbleSort";
+            this.Name = "Exercicio7";
             this.Text = "BubbleSort";
             this.ResumeLayout(false);
             this.PerformLayout();
