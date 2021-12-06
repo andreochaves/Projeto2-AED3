@@ -31,9 +31,11 @@ namespace Projeto_AED_3
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.exercicio2ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exercicio6ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exercicio7ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exercicio8ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.exercicio9ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.exercicio10ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -41,12 +43,14 @@ namespace Projeto_AED_3
             // 
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.exercicio2ToolStripMenuItem,
+            this.exercicio6ToolStripMenuItem,
             this.exercicio7ToolStripMenuItem,
             this.exercicio8ToolStripMenuItem,
-            this.exercicio9ToolStripMenuItem});
+            this.exercicio9ToolStripMenuItem,
+            this.exercicio10ToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(800, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1365, 24);
             this.menuStrip1.TabIndex = 0;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -55,6 +59,12 @@ namespace Projeto_AED_3
             this.exercicio2ToolStripMenuItem.Name = "exercicio2ToolStripMenuItem";
             this.exercicio2ToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
             this.exercicio2ToolStripMenuItem.Text = "Exercicio 2";
+            // 
+            // exercicio6ToolStripMenuItem
+            // 
+            this.exercicio6ToolStripMenuItem.Name = "exercicio6ToolStripMenuItem";
+            this.exercicio6ToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
+            this.exercicio6ToolStripMenuItem.Text = "Exercicio 6";
             // 
             // exercicio7ToolStripMenuItem
             // 
@@ -74,11 +84,17 @@ namespace Projeto_AED_3
             this.exercicio9ToolStripMenuItem.Size = new System.Drawing.Size(75, 20);
             this.exercicio9ToolStripMenuItem.Text = "Exercicio 9";
             // 
+            // exercicio10ToolStripMenuItem
+            // 
+            this.exercicio10ToolStripMenuItem.Name = "exercicio10ToolStripMenuItem";
+            this.exercicio10ToolStripMenuItem.Size = new System.Drawing.Size(81, 20);
+            this.exercicio10ToolStripMenuItem.Text = "Exercicio 10";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(1365, 450);
             this.Controls.Add(this.menuStrip1);
             this.IsMdiContainer = true;
             this.MainMenuStrip = this.menuStrip1;
@@ -98,6 +114,8 @@ namespace Projeto_AED_3
         private System.Windows.Forms.ToolStripMenuItem exercicio7ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exercicio8ToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem exercicio9ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exercicio10ToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem exercicio6ToolStripMenuItem;
     }
 }
 

@@ -15,13 +15,25 @@ namespace Projeto_AED_3
         public Exercicio10()
         {
             InitializeComponent();
+            button1.Click += Button1_Click;
         }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+            int[] vet = new int[] { 36, 52, 51, 5, 33, 17, 33, 53, 42, 8 };
+            label3.Text = "";
+            par_impar(vet);
+            for (int i = 0; i < vet.Length; i++)
+            {
+                label3.Text += " " + vet[i].ToString();
+            }
+        }
+
         void par_impar(int[] M)
         {
-            int trocado = 1, i, aux, j, z = 1;
-            while ((z < 100) || z==trocado)
+            int i, aux, j, z;
+            for (z = 0; z < M.Length; z++)
             {
-                trocado = 0;
                 if ((z % 2) != 0)
                 {
                     for (i = 1; i < 100; i = i + 2)
@@ -31,7 +43,6 @@ namespace Projeto_AED_3
                             aux = M[i];
                             M[i] = M[i + 1];
                             M[i + 1] = aux;
-                            trocado = 1;
                         }
                     }
                 }
@@ -44,16 +55,15 @@ namespace Projeto_AED_3
                             aux = M[i];
                             M[i] = M[i + 1];
                             M[i + 1] = aux;
-                            trocado = 1;
                         }
                     }
                 }
-                z++;
             }
             for (j = 0; j < 100; j++)
             {
                 //printf("%d \n", M[j]);
             }
         }
+
     }
 }

@@ -20,25 +20,18 @@ namespace Projeto_AED_3
         public static List<int> BucketSort1(params int[] x)
         {
             List<int> result = new List<int>();
-
-            //Determine how many buckets you want to create, in this case, the 10 buckets will each contain a range of 10
-            //1-10, 11-20, 21-30, etc. since the passed array is between 1 and 99
             int numOfBuckets = 10;
-
-            //Create buckets
             List<int>[] buckets = new List<int>[numOfBuckets];
+            
             for (int i = 0; i < numOfBuckets; i++)
                 buckets[i] = new List<int>();
-
-            //Iterate through the passed array and add each integer to the appropriate bucket
+            
             for (int i = 0; i < x.Length; i++)
             {
                 int buckitChoice = (x[i] / numOfBuckets);
                 buckets[buckitChoice].Add(x[i]);
             }
 
-            //Sort each bucket and add it to the result List
-            //Each sublist is sorted using Bubblesort, but you could substitute any sorting algo you would like
             for (int i = 0; i < numOfBuckets; i++)
             {
                 int[] temp = BubbleSortList(buckets[i]);
@@ -47,7 +40,6 @@ namespace Projeto_AED_3
             return result;
         }
 
-        //Bubblesort w/ ListInput
         public static int[] BubbleSortList(List<int> input)
         {
             for (int i = 0; i < input.Count; i++)
