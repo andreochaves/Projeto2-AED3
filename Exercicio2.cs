@@ -39,8 +39,7 @@ namespace Projeto_AED_3
             QuickSort quick = new QuickSort();
             label2.Text = "";
             int[] numList = new int[] { 3, 4, 9, 2, 5, 8, 2, 1, 7, 4, 6, 2, 9, 8, 5, 1 };
-            int len = 16;
-            quick.SortQuick(numList, 0, len - 1);
+            quick.quickSort(numList);
 
             for (int i = 0; i < numList.Length; i++)
             {
@@ -61,8 +60,9 @@ namespace Projeto_AED_3
             }
         }
 
-        
-
-       
+        private void button4_Click(object sender, EventArgs e)
+        {
+            label2.Text = label1.Text;
+        }
     }
 }

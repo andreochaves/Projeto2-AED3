@@ -8,73 +8,46 @@ namespace Projeto_AED_3
 {
     class QuickSort
     {
-        public int Partition(int[] numbers, int left, int right)
-
+        public int[] quickSort(int[] vetor)
         {
-
-            int pivot = numbers[left];
-
-            while (true)
-
-            {
-
-                while (numbers[left] < pivot)
-
-                    left++;
-
-
-
-                while (numbers[right] > pivot)
-
-                    right--;
-
-
-
-                if (left < right)
-
-                {
-
-                    int temp = numbers[right];
-
-                    numbers[right] = numbers[left];
-
-                    numbers[left] = temp;
-
-                }
-
-                else
-
-                {
-
-                    return right;
-
-                }
-
-            }
-
+            int inicio = 0;
+            int fim = vetor.Length - 1;
+            quickSort(vetor, inicio, fim);
+            return vetor;
         }
-
-
-
-       public void SortQuick(int[] arr, int left, int right)
-
+        private static void quickSort(int[] vetor, int inicio, int fim)
         {
-
-            // For Recusrion  
-
-            if (left < right)
-
+            if (inicio < fim)
             {
-                int pivot = Partition(arr, left, right);
-                if (pivot > 1)
+                int p = vetor[inicio];
+                int i = inicio + 1;
+                int f = fim;
+
+                while (i <= f)
                 {
-                    SortQuick(arr, left, pivot - 1);
+                    if (vetor[i] <= p)
+                    {
+                        i++;
+                    }
+                    else if (p < vetor[f])
+                    {
+                        f--;
+                    }
+                    else
+                    {
+                        int troca = vetor[i];
+                        vetor[i] = vetor[f];
+                        vetor[f] = troca;
+                        i++;
+                        f--;
+                    }
                 }
-                else
-                {
-                    SortQuick(arr, pivot + 1, right);
-                }
+                vetor[inicio] = vetor[f];
+                vetor[f] = p;
+                quickSort(vetor, inicio, f - 1);
+                quickSort(vetor, f + 1, fim);
             }
         }
+
     }
 }
